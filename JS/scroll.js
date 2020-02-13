@@ -59,7 +59,7 @@ document.addEventListener('scroll', function() {
 
     const parallaxTags = section.querySelectorAll(`[data-parallax]`)
 
-    // loop over each parallaxed tag
+    // Loop over each parallaxed tag
     parallaxTags.forEach(tag => {
       const speed = parseFloat(tag.getAttribute('data-parallax'))
       tag.style.transform = `translate(0, ${distanceToSection * speed}px)`
